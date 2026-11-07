@@ -1,0 +1,113 @@
+/*Michael Rodriguez*/
+/* COMP 584 Project 4 - Calculator */
+
+
+/* Original box sizing */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Changed the page background and font */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e8edf2;
+    font-family: Arial, sans-serif;
+}
+
+/* Changed the original wrapper styling */
+/* Kept the required 400px width */
+.wrapper {
+    width: 400px;
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: #1c2938;
+    border-radius: 12px;
+}
+
+/* Changed the calculator screen */
+.calculator-screen {
+    background-color: #101a26;
+    color: white;
+    height: 80px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    text-align: right;
+}
+
+/* Style the calculator numbers */
+#display {
+    font-size: 34px;
+    overflow-wrap: anywhere;
+}
+
+/* Added CSS Grid for the buttons */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* Changed the button design */
+button {
+    height: 65px;
+    background-color: #34475c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Changed the operator buttons to teal */
+.operator {
+    background-color: #159e9b;
+    font-weight: bold;
+}
+
+/* Changed the clear button color */
+.clear {
+    grid-column: span 2;
+    background-color: #c97862;
+}
+
+/* Zero button takes two columns */
+.zero {
+    grid-column: span 2;
+}
+
+/* Hover effect for normal buttons */
+button:hover {
+    background-color: #4c647d;
+}
+
+/* Hover effect for operators */
+.operator:hover {
+    background-color: #117e7c;
+}
+
+/* Hover effect for clear */
+.clear:hover {
+    background-color: #b56550;
+}
+
+/* Active effect when clicked */
+button:active {
+    background-color: #253548;
+}
+
+/* Active effect for operators */
+.operator:active {
+    background-color: #0b6664;
+}
+
+/* Active effect for clear */
+.clear:active {
+    background-color: #96503f;
+}
