@@ -1,25 +1,65 @@
+<!-- Comp584 Project 4 Calculator app-->
+<!-- Michael Rodriguez -->
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Calculator App</title>
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
- 
-  </head>  
-  <body>
+    <title>COMP 584 Calculator</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main calculator wrapper -->
     <div class="wrapper">
-        <section class="calculator-screen">
 
+        <!-- Calculator screen -->
+        <section class="calculator-screen">
+            <div id="display">0</div>
         </section>
-    
+
+        <!-- Calculator buttons -->
         <section class="calculator-buttons">
- 
+
+            <!-- Clear and backspace -->
+            <button class="clear" data-value="C">C</button>
+            <button data-value="back">←</button>
+            <button class="operator" data-value="/">÷</button>
+
+            <!-- First number row -->
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="*">×</button>
+
+            <!-- Second number row -->
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator" data-value="-">−</button>
+
+            <!-- Third number row -->
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="operator" data-value="+">+</button>
+
+            <!-- Last row -->
+            <button class="zero" data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button class="operator" data-value="=">=</button>
+
         </section>
     </div>
-  </body>
+
+    <!-- Connect the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
 </html>
